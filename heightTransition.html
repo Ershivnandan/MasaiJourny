@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height Transition</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightgreen;
+      transition: height 1s ease-in-out; /* Transition on height */
+    }
+
+    .box.expand {
+      height: 300px; /* Expand height on click */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+  <button onclick="document.querySelector('.box').classList.toggle('expand')">Toggle Height</button>
+
+</body>
+</html>

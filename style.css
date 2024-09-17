@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 equal columns */
+    grid-template-rows: auto auto auto;     /* 3 rows */
+    gap: 10px;                              /* Gap between grid items */
+  }
+
+  .header {
+    grid-column: span 4;                    /* Span across all 4 columns */
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .row-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightblue;
+    padding: 20px;
+    gap: 5px;
+  }
+
+  .row-2 {
+    grid-column: span 4;                    /* Span 4 columns for second row */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns in row 2 */
+    gap: 10px;
+    background-color: lightgreen;
+  }
+
+  .row-3 {
+    grid-column: span 4;                    /* Span 4 columns for third row */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 equal columns in row 3 */
+    gap: 10px;
+    background-color: lightyellow;
+  }
+
+  .item {
+    background-color: lightcoral;
+    padding: 25px 100px 25px 100px;
+    text-align: center;
+    border: 1px solid red;
+  }

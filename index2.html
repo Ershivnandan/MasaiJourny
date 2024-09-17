@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
+      grid-template-rows: auto auto auto;      /* 3 rows */
+      gap: 10px;                               /* Space between grid items */
+    }
+
+    .header {
+      grid-column: span 12;                    /* Full width for header */
+      background-color: blue;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .row-1-item {
+      background-color: lightpurple;
+      padding: 20px;
+      height: 100px;
+    }
+
+    .row-2-item {
+      background-color: lightgreen;
+      padding: 20px;
+      height: 100px;
+    }
+
+    .row-3-item {
+      background-color: lightyellow;
+      padding: 20px;
+      height: 100px;
+    }
+
+    /* Row 2 Specific Grid Configuration */
+    .row-2-item:nth-child(1) {
+      grid-column: span 3;  /* First item spans 3 columns */
+    }
+
+    .row-2-item:nth-child(2) {
+      grid-column: span 2;  /* Second item spans 2 columns */
+    }
+
+    .row-2-item:nth-child(3) {
+      grid-column: span 3;  /* Third item spans 3 columns */
+    }
+
+    .row-2-item:nth-child(4) {
+      grid-column: span 2;  /* Fourth item spans 2 columns */
+    }
+
+    .row-2-item:nth-child(5) {
+      grid-column: span 2;  /* Fifth item spans 2 columns */
+    }
+
+    /* Row 3 Specific Grid Configuration */
+    .row-3-item {
+      grid-column: span 2;  /* Each item in the third row spans 2 columns */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">Fixed Behavior</div>
+
+    <!-- First Row (12 columns) -->
+    <div class="row-1-item">Item 1</div>
+    <div class="row-1-item">Item 2</div>
+    <div class="row-1-item">Item 3</div>
+    <div class="row-1-item">Item 4</div>
+    <div class="row-1-item">Item 5</div>
+    <div class="row-1-item">Item 6</div>
+    <div class="row-1-item">Item 7</div>
+    <div class="row-1-item">Item 8</div>
+    <div class="row-1-item">Item 9</div>
+    <div class="row-1-item">Item 10</div>
+    <div class="row-1-item">Item 11</div>
+    <div class="row-1-item">Item 12</div>
+
+    <!-- Second Row (spanning across 12 columns but with 5 items of varying widths) -->
+    <div class="row-2-item">Item 13</div>
+    <div class="row-2-item">Item 14</div>
+    <div class="row-2-item">Item 15</div>
+    <div class="row-2-item">Item 16</div>
+    <div class="row-2-item">Item 17</div>
+
+    <!-- Third Row (6 items, each spanning 2 columns) -->
+    <div class="row-3-item">Item 18</div>
+    <div class="row-3-item">Item 19</div>
+    <div class="row-3-item">Item 20</div>
+    <div class="row-3-item">Item 21</div>
+    <div class="row-3-item">Item 22</div>
+    <div class="row-3-item">Item 23</div>
+  </div>
+
+</body>
+</html>
