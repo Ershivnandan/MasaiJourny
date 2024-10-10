@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1E53;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.inner1{
+    padding-left: 50px;
+}
+
+
+.inner2{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.listDiv ul{
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 400;
+}
+.listDiv ul li{
+    cursor: pointer;
+}
+
+
+.joinButton button{
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lastLi{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.blogIco img{
+    width: 15px;
+    height: 15px;
+}
+.blogIco{
+    display: flex;
+    align-items: center;
+}
